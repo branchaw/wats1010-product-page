@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Add proper head tag to provide a page description for search
-             engines. -->
         <title>API Superstore</title>
+		<meta name="description" content="Leverage the power of your ecommerce website with all the APIs your customers have come to expect.">
+		
         <!-- Bootstrap CSS Framework -->
         <!-- You can remove the ``link`` tags below if you don't want to use
              Bootstrap with your site. If you choose to use Bootstrap, be sure
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
         <!-- End Bootstrap CSS Framework -->
+		<link rel="stylesheet" href="main.css">
 
         <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
              support bookmarking. -->
@@ -27,28 +28,105 @@
 
     </head>
     <body>
-        <!-- Note: If you do not see a lamp icon in the heading below
-             when you view this file in a web browser, then there is an issue
-             with how Bootstrap is linked to this page. -->
-        <h1><span class="glyphicon glyphicon-lamp"></span> Hello World!</h1>
-        <!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
+		<div class="container-fluid">
+			<div class="page-header">
+           		<h1><span class="glyphicon glyphicon-lamp"></span> APISuperstore.com</h1>
+				<ul class="top-nav">
+					<li>Home</li>
+					<li>Sign Up</li>
+					<li>Free Quote</li>
+					<li>Search API Database</li>
+				</ul>
+				<ul class="top-social-share">
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>LinkedIn</li>
+					<li>I-Phone</li>
+				</ul>
+		</div>
+		
+		<div id="intro" class="container">
+			<div class="row">
+				<div id="box1" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+					<span><img class="icon" src="clock.png" alt="clock"></span>
+				<h4>At APISuperstore.com we save you time.</h4>
+			</div>
+			<!--<div class="social-media-icons-cube-256x256-facebook"></div>
+			<div class="social-media-icons-cube-256x256-linkedin"></div>
+			<div class="social-media-icons-cube-256x256-twitter"></div> -->
+			<div id="box2" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+				<!-- <span><img class="icon" src="social_media_sprite.png" alt="APIs"></span> -->
+				<h4>We take the guess work out of API integration.</h4>
+					<div id="collcontent">We gather all the most popular APIs for your site and categorize them to suite your needs.</div>
+			</div>
+			<div id="box3" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+				<span><img class="icon" src="Single_Tap.png" alt="Index finger touch"></span>
+				<h4>We put the power of APIs at your fingertips.<h4>
+					<div id="collcontent"> Sign up now and revolutionize your business.</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div id="video" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<iframe width="420" height="315" src="https://www.youtube.com/embed/L48g1ZWLMdo"frameborder="0" allowfullscreen></iframe>
+				</div>	
+				<div id="testimonials" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<p>"First of all, I would like to say thank you so much for all the hard work you guys have put into getting the latest APIs together all in one place! You have done an excellent job communicating which APIs are the most beneficial for my business and in addition to that, I want to thank your team for providing such great customer service."</p>
+					<p><em>Sally Clickbait, NY</em></p>
+					<p>“I officially launched my site last night and already have had a few orders come through! The APIs you provided really made a difference in making our customer’s experience on the site a great one.”</p>
+					<p><em>Sammy Salesman, CA</em></p>
+				</div>
+			</div>
+		</div>
+ 
+		<div id="long-description" class="jumbotron">
+			<h2>Leverage the power of your ecommerce website with all the APIs your customers have come to expect.</h2>
+			<p>Have API integration at your fingertips. Deliver dynamically posted and updated content instantly.</p>
+			<p>At APISuperstore.com you can choose from APIs in all the most popular categories. Embed Facebook and LinkedIn with ease. Extend the functionality of your site with Google Maps or Yahoo Weather.</p>
+		</div>
 
-        <!-- TODO: Create an area to put the explainer video. -->
+		<div id="cta" class="container">
+			<h3>Sign up now to bring the best of the web to your customers. Here’s how:</h3>
+			<ul>
+				<li>Set up and account</li>
+				<li>Browse the API catalog and select the APIs your business needs</li>
+				<li>Click to purchase a link to the API Provider website</li>
+				<li>It's that easy!</li>
+			</ul>
+		</div>
 
-        <!-- TODO: Create an area to put the long product description. -->
-
-        <!-- TODO: Create an area to put customer testimonials. -->
-
-        <!-- TODO: Create an area to show features. -->
-
-        <!-- TODO: Create an area to show company contact info (phone,
-             location, etc.) -->
-
-        <!-- TODO: Create an area that allows users to Share links to the
-             page. -->
-
-        <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
+		<div id="content-features" class="well well-sm">
+			<h3>Select from over 13,000 APIs to improve your site. Browse our directory now to get started.</h3>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h4 id="label">Popular Catagories</h4>
+				<ul>
+					<li>Weather</li>
+					<li>Mapping</li>
+					<li>Mobile</li>
+					<li>Transportation</li>
+					<li>Social</li>
+				</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h4 id="label">Featured APIs</h4>
+				<ul>
+					<li>Facebook</li>
+					<li>Google Maps</li>
+					<li>Yahoo Weatehr</li>
+					<li>LinkedIn</li>
+					<li>Skype</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="page-footer">
+			<h2>www.APISuperstore.com</h2>
+			<p>800-333-4444 | apiss@superstore.com</p>
+			<p>1234 ABCD Boulevard, Warehouse Center, TX 01234</p>
+		</div>
     </body>
 </html>
