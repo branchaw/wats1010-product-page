@@ -6,39 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>API Superstore</title>
 		<meta name="description" content="Leverage the power of your ecommerce website with all the APIs your customers have come to expect.">
-		
-        <!-- Bootstrap CSS Framework -->
-        <!-- You can remove the ``link`` tags below if you don't want to use
-             Bootstrap with your site. If you choose to use Bootstrap, be sure
-             to reference the resources and the Bootstrap official
-             documentation: http://getbootstrap.com. -->
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
-        <!-- End Bootstrap CSS Framework -->
 		<link rel="stylesheet" href="main.css">
 
-        <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
-             support bookmarking. -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="api_superstore_logo_bg" href="api_superstore_logo_bg.png">
         <link rel="favicon" href="favicon.ico">
-
     </head>
+	
     <body>
-		<div class="container-fluid">
+		<div id="header" class="container-fluid">
 			<div class="page-header">
-           		<h1><span class="glyphicon glyphicon-lamp"></span> APISuperstore.com</h1>
+				<h1><span><img class="logo" src="api_superstore_logo_bg.png" alt="logo" width="700px"></span></h1>
 				<ul class="top-nav">
-					<li>Home</li>
-					<li>Sign Up</li>
-					<li>Free Quote</li>
-					<li>Search API Database</li>
+					<li><a class="btn btn-primary" href="#" role="button">
+						<span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li><a class="btn btn-primary" href="#cta" role="button"> Sign Up<a></li>
+					<li><a class="btn btn-primary" href="#content-features" role="button">
+						<span class="glyphicon glyphicon-search"></span> Search API Database</a></li>
+					<li><a class="btn btn-primary" href="http://www.facebook.com" role="button">
+  						<span class="glyphicon glyphicon-bookmark"></span> Facebook</a></li>
+					<li><a class="btn btn-primary" href="https://twitter.com" role="button">
+						<span class="glyphicon glyphicon-bookmark"></span> Twitter</a></li>
+					<li><a class="btn btn-primary" href="https://www.linkedin.com" role="button">
+  						<span class="glyphicon glyphicon-bookmark"></span> LinkedIn</a></li>
+					<li><a class="btn btn-primary" href="https://www.instagram.com" role="button">
+						<span class="glyphicon glyphicon-bookmark"></span> Instagram</a></li>
 				</ul>
-				<ul class="top-social-share">
-					<li>Facebook</li>
-					<li>Twitter</li>
-					<li>LinkedIn</li>
-					<li>I-Phone</li>
-				</ul>
+			</div>
 		</div>
 		
 		<div id="intro" class="container">
@@ -46,33 +42,34 @@
 				<div id="box1" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
 					<span><img class="icon" src="clock.png" alt="clock"></span>
 				<h4>At APISuperstore.com we save you time.</h4>
-			</div>
-			<!--<div class="social-media-icons-cube-256x256-facebook"></div>
-			<div class="social-media-icons-cube-256x256-linkedin"></div>
-			<div class="social-media-icons-cube-256x256-twitter"></div> -->
-			<div id="box2" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-				<!-- <span><img class="icon" src="social_media_sprite.png" alt="APIs"></span> -->
-				<h4>We take the guess work out of API integration.</h4>
 					<div id="collcontent">We gather all the most popular APIs for your site and categorize them to suite your needs.</div>
+			</div>
+			<div id="box2" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+				<div class="imagesprite"></div>
+				<h4>We take the guess work out of API integration.</h4>
 			</div>
 			<div id="box3" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
 				<span><img class="icon" src="Single_Tap.png" alt="Index finger touch"></span>
-				<h4>We put the power of APIs at your fingertips.<h4>
+				<h4>We put the power of APIs at your fingertips.</h4>
 					<div id="collcontent"> Sign up now and revolutionize your business.</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class="container">
+		<div id="vid-test" class="container">
 			<div class="row">
 				<div id="video" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<iframe width="420" height="315" src="https://www.youtube.com/embed/L48g1ZWLMdo"frameborder="0" allowfullscreen></iframe>
 				</div>	
 				<div id="testimonials" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<p>"First of all, I would like to say thank you so much for all the hard work you guys have put into getting the latest APIs together all in one place! You have done an excellent job communicating which APIs are the most beneficial for my business and in addition to that, I want to thank your team for providing such great customer service."</p>
-					<p><em>Sally Clickbait, NY</em></p>
-					<p>“I officially launched my site last night and already have had a few orders come through! The APIs you provided really made a difference in making our customer’s experience on the site a great one.”</p>
-					<p><em>Sammy Salesman, CA</em></p>
+					<blockquote>
+						<p>"First of all, I would like to say thank you so much for all the hard work you guys have put into getting the latest APIs together all in one place! You have done an excellent job communicating which APIs are the most beneficial for my business and in addition to that, I want to thank your team for providing such great customer service."</p>
+						<footer><cite title="Sally Clickbait, NY">Sally Clickbait, NY</cite></footer>
+					</blockquote>
+					<blockquote>
+						<p>“I officially launched my site last night and already have had a few orders come through! The APIs you provided really made a difference in making our customer’s experience on the site a great one.”</p>
+						<footer><cite title="Sammy Salesman, CA">Sammy Salesman, CA</cite></footer>
+					</blockquote>
 				</div>
 			</div>
 		</div>
@@ -86,19 +83,24 @@
 		<div id="cta" class="container">
 			<h3>Sign up now to bring the best of the web to your customers. Here’s how:</h3>
 			<ul>
-				<li>Set up and account</li>
+				<li>Set up an account</li>
 				<li>Browse the API catalog and select the APIs your business needs</li>
 				<li>Click to purchase a link to the API Provider website</li>
 				<li>It's that easy!</li>
-			</ul>
+				</ul>
 		</div>
+			<div class="container">
+				<div class="centered text-center">
+					<a id="sign-up" class="btn btn-primary btn-lg" href="#"> Sign Up</a>
+				</div>
+			</div>
 
 		<div id="content-features" class="well well-sm">
-			<h3>Select from over 13,000 APIs to improve your site. Browse our directory now to get started.</h3>
+			<h3 class="h3">Select from over 13,000 APIs to improve your site. Browse our directory now to get started.</h3>
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<h4 id="label">Popular Catagories</h4>
-				<ul>
+				<h4 id="label" class="popular">Popular Catagories</h4>
+				<ul class="popular">
 					<li>Weather</li>
 					<li>Mapping</li>
 					<li>Mobile</li>
@@ -108,7 +110,7 @@
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<h4 id="label">Featured APIs</h4>
-				<ul>
+				<ul class="featured">
 					<li>Facebook</li>
 					<li>Google Maps</li>
 					<li>Yahoo Weatehr</li>
@@ -118,11 +120,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div id="footer" class="container-fluid">
 			<div class="page-footer">
 			<h2>www.APISuperstore.com</h2>
-			<p>800-333-4444 | apiss@superstore.com</p>
+				<p>800-333-4444 | <a href="mailto:apiss@superstore.com">apiss@superstore.com</a></p>
 			<p>1234 ABCD Boulevard, Warehouse Center, TX 01234</p>
+			</div>
 		</div>
     </body>
 </html>
